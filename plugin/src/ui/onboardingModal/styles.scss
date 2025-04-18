@@ -1,0 +1,43 @@
+.todoist-onboarding-token-form {
+  margin: 2em 0;
+
+  .react-aria-TextField {
+    display: flex;
+    flex-direction: column;
+
+    & > * + * {
+      margin-top: 0.5em;
+    }
+
+    .react-aria-Group {
+      display: flex;
+      align-items: center;
+
+      & > * + * {
+        margin-left: 0.5em;
+      }
+    }
+
+    input {
+      flex-grow: 1;
+
+      &[data-invalid] {
+        border: 1px solid var(--background-modifier-error);
+      }
+    }
+
+    .react-aria-Label {
+      font-weight: 600;
+    }
+  }
+
+  .react-aria-Button {
+    float: right;
+    margin-top: 1em;
+  }
+
+  .react-aria-FieldError {
+    color: var(--text-error);
+    font-size: var(--font-small);
+  }
+}

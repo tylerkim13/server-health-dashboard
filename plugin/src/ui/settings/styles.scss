@@ -1,0 +1,41 @@
+.mod-cta .setting-button-icon {
+  margin-right: 0.5em;
+}
+
+.setting-item-control {
+  .react-aria-TextField {
+    display: flex;
+    flex-direction: column;
+
+    & > * + * {
+      margin-top: 0.5em;
+    }
+
+    input {
+      &[data-invalid] {
+        border: 1px solid var(--background-modifier-error);
+      }
+    }
+
+    .react-aria-FieldError {
+      color: var(--text-error);
+      font-size: var(--font-small);
+    }
+  }
+}
+
+.setting-item-deprecation-notice {
+  display: flex;
+  background-color: rgba(var(--color-yellow-rgb), 0.2);
+  padding: 4px 12px;
+  border-radius: 8px;
+  margin-top: 0.5em;
+
+  .setting-item-deprecation-notice-message {
+    margin-left: 0.5em;
+  }
+}
+
+.setting-item-build-stamp {
+  font-size: var(--font-smaller);
+}
